@@ -1,0 +1,11 @@
+[package]
+name = "pbft"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+    libp2p = { version = "0.50", features = ["tcp", "dns", "async-std", "noise", "mplex", "yamux", "websocket", "macros", "mdns", "gossipsub", "request-response"]}
+    futures = "0.3.27"
+    async-std = { version = "1.12.0", features = ["attributes"] }
