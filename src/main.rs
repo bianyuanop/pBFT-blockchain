@@ -5,6 +5,10 @@ use libp2p::{mdns, gossipsub};
 use std::error::Error;
 use std::time::Duration;
 
+mod handler;
+mod pbft;
+mod lib;
+
 #[async_std::main]
 async fn main() -> Result<(), Box<dyn Error>>{
     let local_key = identity::Keypair::generate_ed25519();
